@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+
+.main {
+    width: 100%;
+    height: 100vh; 
+}
+
+.header {
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 70px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.Unlock{
+    background-color: transparent;
+    color: rgb(204, 200, 200);
+    border: 1px solid orange;
+    width: 350px;
+}
+
+.Unlock span {
+    color: orange;
+    padding-left: .6rem;
+}
+
+.search {
+    background-color: black;
+}
+.breadcrumb {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+
+.breadcrumb .divider {
+    margin: 0 6px;
+    color: gray;
+}
+
+.breadcrumb .current {
+    font-weight: 700;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.date-selector {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(200, 200, 200);
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.version{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+}
+
+.right-icons{
+    display: flex;
+    
+    align-items: center;
+}
+.right-icons .icon:hover{
+    cursor: pointer;
+}
+
+.iconss:hover {
+    cursor: pointer;
+}
+.right-icons .text{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(239, 68, 68);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: rgb(220, 38, 38);
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+.recent-orders {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.recent-orders h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.orders-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    color: rgb(100, 100, 100);
+    font-weight: 600;
+}
+
+td {
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-dot.green {
+    background-color: rgb(34, 197, 94);
+}
+
+.status-dot.red {
+    background-color: rgb(239, 68, 68);
+}
+
+
+.status {
+    font-weight: 600;
+}
+
+.status.green {
+    color: rgb(34, 197, 94);
+}
+
+.status.red {
+    color: rgb(239, 68, 68);
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .hack{
+        display: none;
+    }
+}
